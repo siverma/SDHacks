@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4C8D5E51BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C8D5E41BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m */; settings = {ASSET_TAGS = (); }; };
 		FBED1BC11BBFBE7200B91B7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BC01BBFBE7200B91B7A /* main.m */; };
 		FBED1BC41BBFBE7200B91B7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BC31BBFBE7200B91B7A /* AppDelegate.m */; };
 		FBED1BC71BBFBE7200B91B7A /* Productivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BC51BBFBE7200B91B7A /* Productivity.xcdatamodeld */; };
@@ -31,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4C8D5E31BBFDB7A00DDB011 /* WeeklyOverviewTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeeklyOverviewTableVC.h; sourceTree = "<group>"; };
+		F4C8D5E41BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeeklyOverviewTableVC.m; sourceTree = "<group>"; };
 		FBED1BBB1BBFBE7200B91B7A /* Productivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Productivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBED1BBF1BBFBE7200B91B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBED1BC01BBFBE7200B91B7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 				FBED1BF01BBFD07200B91B7A /* NewEventViewController.h */,
 				FBED1BF11BBFD07200B91B7A /* NewEventViewController.m */,
 				FBED1BCB1BBFBE7200B91B7A /* Main.storyboard */,
+				F4C8D5E31BBFDB7A00DDB011 /* WeeklyOverviewTableVC.h */,
+				F4C8D5E41BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m */,
 				FBED1BCE1BBFBE7200B91B7A /* Images.xcassets */,
 				FBED1BD01BBFBE7200B91B7A /* LaunchScreen.xib */,
 				FBED1BC51BBFBE7200B91B7A /* Productivity.xcdatamodeld */,
@@ -240,6 +245,7 @@
 				FBED1BEF1BBFC8CC00B91B7A /* EventDetailViewController.m in Sources */,
 				FBED1BE91BBFBF8000B91B7A /* Task.m in Sources */,
 				FBED1BC41BBFBE7200B91B7A /* AppDelegate.m in Sources */,
+				F4C8D5E51BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m in Sources */,
 				FBED1BC71BBFBE7200B91B7A /* Productivity.xcdatamodeld in Sources */,
 				FBED1BEC1BBFC2E900B91B7A /* Reward.m in Sources */,
 				FBED1BC11BBFBE7200B91B7A /* main.m in Sources */,
