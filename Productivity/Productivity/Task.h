@@ -7,14 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
-@interface Task : NSObject
 
-@property (strong, nonatomic) NSString *title;
-@property (strong, nonatomic) NSDate *deadline;
-@property (strong, nonatomic) NSString *taskDescription;
-@property (strong, nonatomic) NSString *location;
-@property (nonatomic) int pointsWorth;
-@property (nonatomic) float percentCompleted;
+@interface Task : NSManagedObject
+
+@property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString * taskDescription;
+@property (nonatomic, retain) NSDate * deadline;
+@property (nonatomic, retain) NSString * location;
+@property (nonatomic, retain) NSNumber * timeRemaining;
+@property (nonatomic, retain) NSNumber * progress;
+@property (nonatomic, retain) NSNumber * points;
 
 @end

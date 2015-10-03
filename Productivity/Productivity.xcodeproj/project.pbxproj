@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4C8D5E51BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C8D5E41BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m */; settings = {ASSET_TAGS = (); }; };
+		F4C8D5E51BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C8D5E41BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m */; };
 		FBED1BC11BBFBE7200B91B7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BC01BBFBE7200B91B7A /* main.m */; };
 		FBED1BC41BBFBE7200B91B7A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BC31BBFBE7200B91B7A /* AppDelegate.m */; };
 		FBED1BC71BBFBE7200B91B7A /* Productivity.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BC51BBFBE7200B91B7A /* Productivity.xcdatamodeld */; };
@@ -15,10 +15,10 @@
 		FBED1BCF1BBFBE7200B91B7A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBED1BCE1BBFBE7200B91B7A /* Images.xcassets */; };
 		FBED1BD21BBFBE7200B91B7A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBED1BD01BBFBE7200B91B7A /* LaunchScreen.xib */; };
 		FBED1BDE1BBFBE7200B91B7A /* ProductivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BDD1BBFBE7200B91B7A /* ProductivityTests.m */; };
-		FBED1BE91BBFBF8000B91B7A /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BE81BBFBF8000B91B7A /* Task.m */; };
 		FBED1BEC1BBFC2E900B91B7A /* Reward.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BEB1BBFC2E900B91B7A /* Reward.m */; };
 		FBED1BEF1BBFC8CC00B91B7A /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BEE1BBFC8CC00B91B7A /* EventDetailViewController.m */; };
 		FBED1BF21BBFD07200B91B7A /* NewEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BF11BBFD07200B91B7A /* NewEventViewController.m */; };
+		FBED1BF81BBFE73C00B91B7A /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = FBED1BF71BBFE73C00B91B7A /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +46,14 @@
 		FBED1BD71BBFBE7200B91B7A /* ProductivityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductivityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBED1BDC1BBFBE7200B91B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBED1BDD1BBFBE7200B91B7A /* ProductivityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductivityTests.m; sourceTree = "<group>"; };
-		FBED1BE71BBFBF8000B91B7A /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
-		FBED1BE81BBFBF8000B91B7A /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		FBED1BEA1BBFC2E900B91B7A /* Reward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reward.h; sourceTree = "<group>"; };
 		FBED1BEB1BBFC2E900B91B7A /* Reward.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reward.m; sourceTree = "<group>"; };
 		FBED1BED1BBFC8CC00B91B7A /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
 		FBED1BEE1BBFC8CC00B91B7A /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
 		FBED1BF01BBFD07200B91B7A /* NewEventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEventViewController.h; sourceTree = "<group>"; };
 		FBED1BF11BBFD07200B91B7A /* NewEventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEventViewController.m; sourceTree = "<group>"; };
+		FBED1BF61BBFE73C00B91B7A /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		FBED1BF71BBFE73C00B91B7A /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 			children = (
 				FBED1BC21BBFBE7200B91B7A /* AppDelegate.h */,
 				FBED1BC31BBFBE7200B91B7A /* AppDelegate.m */,
-				FBED1BE71BBFBF8000B91B7A /* Task.h */,
-				FBED1BE81BBFBF8000B91B7A /* Task.m */,
+				FBED1BF61BBFE73C00B91B7A /* Task.h */,
+				FBED1BF71BBFE73C00B91B7A /* Task.m */,
 				FBED1BEA1BBFC2E900B91B7A /* Reward.h */,
 				FBED1BEB1BBFC2E900B91B7A /* Reward.m */,
 				FBED1BED1BBFC8CC00B91B7A /* EventDetailViewController.h */,
@@ -243,10 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBED1BEF1BBFC8CC00B91B7A /* EventDetailViewController.m in Sources */,
-				FBED1BE91BBFBF8000B91B7A /* Task.m in Sources */,
 				FBED1BC41BBFBE7200B91B7A /* AppDelegate.m in Sources */,
 				F4C8D5E51BBFDB7A00DDB011 /* WeeklyOverviewTableVC.m in Sources */,
 				FBED1BC71BBFBE7200B91B7A /* Productivity.xcdatamodeld in Sources */,
+				FBED1BF81BBFE73C00B91B7A /* Task.m in Sources */,
 				FBED1BEC1BBFC2E900B91B7A /* Reward.m in Sources */,
 				FBED1BC11BBFBE7200B91B7A /* main.m in Sources */,
 				FBED1BF21BBFD07200B91B7A /* NewEventViewController.m in Sources */,

@@ -7,9 +7,13 @@
 //
 
 #import "WeeklyOverviewTableVC.h"
+#import <CoreData/CoreData.h>
+#import "Task.h"
+#import "EventDetailViewController.h"
 
 @interface WeeklyOverviewTableVC ()
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSArray *tasks;
 @end
 
 @implementation WeeklyOverviewTableVC
@@ -22,11 +26,27 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Task"];
+    self.tasks = [[self.managedObjectContext executeFetchRequest:fetchRequest error:nil] mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSManagedObjectContext *)managedObjectContext
+{
+    NSManagedObjectContext *context = nil;
+    id delegate = [[UIApplication sharedApplication] delegate];
+    if ([delegate performSelector:@selector(managedObjectContext)]) {
+        context = [delegate managedObjectContext];
+    }
+    return context;
 }
 
 #pragma mark - Table view data source
@@ -65,18 +85,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
+    return self.tasks.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"taskCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    Task *task = [self.tasks objectAtIndex:indexPath.row];
+    cell.textLabel.text = task.title;
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -112,14 +133,19 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([segue.identifier isEqualToString:@"showTask"]) {
+        EventDetailViewController *vc = segue.destinationViewController;
+        int index = [self.tableView indexPathForSelectedRow].row;
+        vc.task = [self.tasks objectAtIndex:index];
+    }
 }
-*/
+
 
 @end

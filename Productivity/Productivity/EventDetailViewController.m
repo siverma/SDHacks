@@ -31,7 +31,7 @@ double secondsInAnHour = 3600;
     int hoursBetweenDates = timeUntilDeadline / secondsInAnHour;
     self.timeRemainingLabel.text = [NSString stringWithFormat:@"Hours Left: %d", hoursBetweenDates];
     
-    self.progressLabel.text = [NSString stringWithFormat:@"Progress: %f", self.task.percentCompleted * 100];
+    self.progressLabel.text = [NSString stringWithFormat:@"Progress: %d", [self.task.progress intValue] * 100];
     
     self.pointsLabel.text = [NSString stringWithFormat:@"You will get %d extra points if completed %d days early.", 5, 2];
 }

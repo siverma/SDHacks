@@ -8,6 +8,15 @@
 
 #import "Task.h"
 
+
 @implementation Task
+
+@dynamic title;
+@dynamic taskDescription;
+@dynamic deadline;
+@dynamic location;
+@dynamic timeRemaining;
+@dynamic progress;
+@dynamic points;
 
 @end
