@@ -438,6 +438,7 @@
 				FBED1BE31BBFBE7200B91B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBED1BE41BBFBE7200B91B7A /* Build configuration list for PBXNativeTarget "ProductivityTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +447,7 @@
 				FBED1BE61BBFBE7200B91B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

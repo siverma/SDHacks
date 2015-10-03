@@ -27,7 +27,11 @@
 - (IBAction)save:(id)sender {
     NSLog(@"saved");
 
-//    self.task.titl
+    self.task.title = self.taskTextField.text;
+    self.task.location = self.locationTextField.text;
+//    self.task.description = self.detailsTextField.text;
+    
+    
     
     [self performSegueWithIdentifier:@"showTask" sender:self];
 }

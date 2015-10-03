@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F0F7441B-2E66-4900-9DCB-DB6528727518</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Productivity</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B9200AF1085C6FE7D5323055CD54AFF6CBC1994A</key>
+		<string>https://github.com/siverma/SDHacks.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Productivity/Productivity.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B9200AF1085C6FE7D5323055CD54AFF6CBC1994A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/siverma/SDHacks.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B9200AF1085C6FE7D5323055CD54AFF6CBC1994A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B9200AF1085C6FE7D5323055CD54AFF6CBC1994A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SDHacks</string>
+		</dict>
+	</array>
+</dict>
+</plist>
