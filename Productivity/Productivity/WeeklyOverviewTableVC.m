@@ -32,12 +32,39 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return 7;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return @"Sunday";
+            break;
+        case 1:
+            return @"Monday";
+            break;
+        case 2:
+            return @"Tuesday";
+            break;
+        case 3:
+            return @"Wednesday";
+            break;
+        case 4:
+            return @"Thursday";
+            break;
+        case 5:
+            return @"Friday";
+            break;
+        case 6:
+            return @"Saturday";
+            break;
+        default:
+            break;
+    }
+    return nil;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return 0;
 }
 
