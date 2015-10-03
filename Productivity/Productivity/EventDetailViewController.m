@@ -17,7 +17,7 @@ double secondsInAnHour = 3600;
     
     self.titleLabel.text = self.task.title;
     
-    self.descriptionLabel.text = self.task.description;
+    self.descriptionLabel.text = self.task.taskDescription;
     
     NSDate *deadline = self.task.deadline;
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -27,7 +27,7 @@ double secondsInAnHour = 3600;
     
     self.locationLabel.text = self.task.location;
     
-    NSTimeInterval timeUntilDeadline = [[NSDate date] timeIntervalSinceDate:deadline]; // returns seconds
+    NSTimeInterval timeUntilDeadline = [deadline timeIntervalSinceDate:[NSDate date]]; // returns seconds
     int hoursBetweenDates = timeUntilDeadline / secondsInAnHour;
     self.timeRemainingLabel.text = [NSString stringWithFormat:@"Hours Left: %d", hoursBetweenDates];
     

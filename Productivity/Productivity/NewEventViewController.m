@@ -24,19 +24,29 @@
     [super viewDidLoad];
 }
 
+- (Task *)task {
+    if (!_task) {
+        _task = [[Task alloc] init];
+    }
+    return _task;
+}
+
 - (IBAction)save:(id)sender {
     NSLog(@"saved");
 
     self.task.title = self.taskTextField.text;
     self.task.location = self.locationTextField.text;
-//    self.task.description = self.detailsTextField.text;
-    
-    
+    self.task.taskDescription = self.detailsTextField.text;
+    self.task.percentCompleted = 0;
+    self.task.pointsWorth = 10;
+    NSDate *date = self.datePicker.date;
+    self.task.deadline = date;
     
     [self performSegueWithIdentifier:@"showTask" sender:self];
 }
 
 - (IBAction)cancel:(id)sender {
+    NSLog(@"cancel");
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
